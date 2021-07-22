@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML y CSS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/htmlCss.css">
+</head>
+
+<body class="body2">
+
+    <!-- Barra de Navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <!--<a class="navbar-brand" href="#">
+                        <img src="" alt="" width="30" height="24">
+                      </a>-->
+
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="htmlCss.html">HTML+CSS</a></li>
+                            <li><a class="dropdown-item" href="logica.html">LÓGICA Y ALGORITMIA</a></li>
+                            <li><a class="dropdown-item" href="js.html">JS</a></li>
+                            <li><a class="dropdown-item" href="bootstrap.html">BOOSTRAP</a></li>
+                            <li><a class="dropdown-item" href="repositorios.html">REPOSITORIOS</a></li>
+                            <li><a class="dropdown-item" href="scrum.html">SCRUM</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Banner-->
+    <div class="banner2" data-aos="fade-down">
+        <h1>
+            CURSO <br />
+            HTML <br />
+            Y <br>
+            CSS 
+        </h1>
+    </div>
+    <br>
+    <div class="container bg-light  rounded-1" data-aos="fade-down">
+        <br>
+        <br>
+        <h2 class="display-5"><strong>Acerca de este Curso</strong></h2>
+        <hr>
+        <ol>Bienvenido a este curso de HTML y CSS, en este curso aprenderas algunos de los conceptos mas importantes sobre etiquetas y clases.
+            </ol>
+        <br>
+    </div>
+
+    <div class="container bg-light  rounded-1" data-aos="fade-down">
+        <h2 class="display-5"><strong>Contenido del Curso HTML</strong></h2>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        HTML
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p><strong>HTML </strong>significa lenguaje de marcado de hipertexto, y le permite al usuario crear y estructurar secciones, párrafos, encabezados, enlaces y elementos de cita en bloque (blockquotes) para páginas web y aplicaciones.
+                                    HTML no es un lenguaje de programación, lo que significa que no tiene la capacidad de crear una funcionalidad dinámica. En cambio, hace posible organizar y formatear documentos, de manera similar a Microsoft Word.<br>
+                                    Cuando trabajamos con HTML, utilizamos estructuras de código simples (etiquetas y atributos) para marcar una página web. Por ejemplo, podemos crear un párrafo colocando el texto encerrado dentro de una etiqueta inicial <strong>p</strong> y de cierre <strong>/p</strong>. 
+                                    En general, HTML es un lenguaje de marcado que es realmente sencillo y fácil de aprender incluso para los principiantes absolutos en la construcción de sitios web.
+
+                                    </p>
+
+                            </div>
+
+                            <div class="col-lg-4">
+                                <img src="./assets/img2/htmlEtiqutas.jpg" class="img-fluid rounded " height="200"
+                                    width="300" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        HISTORIA DE HTML
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>• HTML fue inventado por Tim Berners-Lee, un físico del instituto de investigación CERN en Suiza. Se le ocurrió la idea de un sistema de hipertexto basado en Internet. </p>
+                        <p>• Hipertexto significa un texto que contiene referencias (links) a otros textos a los que los usuarios pueden acceder de inmediato. Publicó la primera versión de HTML en 1991, que constaba de 18 etiquetas HTML. Desde entonces, cada nueva versión del lenguaje HTML viene con nuevas etiquetas y atributos (modificadores de etiqueta) para el marcado.
+                            
+                        </p>
+                        <p>• Según la Referencia de elementos HTML de Mozilla Developer Network, actualmente hay 140 etiquetas HTML, aunque algunas de ellas ya están obsoletas (no son compatibles con los navegadores modernos).
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        ¿CÓMO FUNCIONA HTML?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        
+                        <p>
+                            Los documentos HTML son archivos que terminan con una extensión .html o .htm. Puedes verlos usando cualquier navegador web (como Google Chrome, Safari o Mozilla Firefox). El navegador lee el archivo HTML y muestra su contenido para que los usuarios de Internet puedan verlo.
+                            Por lo general, el sitio web promedio incluye varias páginas HTML diferentes. Por ejemplo: las páginas de inicio, las páginas de acerca de y las páginas de contacto, todas tendrán documentos HTML separados.
+                        </p>
+                        
+                        <p>
+                            Cada página HTML consta de un conjunto de etiquetas (también denominadas elementos), a las que te puedes referir como los componentes básicos de las páginas web. Crean una jerarquía que estructura el contenido en secciones, párrafos, encabezados y otros bloques de contenido.
+                        </p>
+                        <p>
+                            La mayoría de los elementos HTML tienen una apertura y un cierre que utilizan la sintaxis <etiqueta> </etiqueta>.
+
+A continuación, puedes ver un ejemplo de código de cómo se pueden estructurar los elementos HTML:
+
+                        </p>
+                        <img src="./assets/img2/div.png" alt="imagen div">
+                        <p></p>
+                        <p>El elemento más externo es una división simple (div /div) que puedes usar para marcar secciones de contenido más grandes.
+                            Contiene un encabezado (h1 /h1), un subtítulo (h2 /h2), dos párrafos (p /p) y una imagen (img).
+                            El segundo párrafo incluye un enlace (a /a) con un atributo href que contiene la URL de destino.
+                            La etiqueta de imagen también tiene dos atributos: src para la ruta de la imagen y alt para la descripción de la imagen.
+                            </p>
+                        
+                       
+                    </div>
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapse6">
+                        ESTRUCTURA DE UNA PAGINA HTML
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-heading6">
+                    <div class="accordion-body">
+                        <H3>La estructura de las etiquetas HTML tiene el siguiente formato:</H3>
+                        <img src="./assets/img2/etiqueta.png" alt="etiqueta">
+                       <br>
+                       <h3>Etiqueta HTML</h3>
+                       <p>
+                        La parte esencial de una etiqueta HTML es lo que se denomina la etiqueta de apertura. Se trata de escribir el nombre de la etiqueta en cuestión, colocándola entre los carácteres < y >. Aunque no es terminantemente obligatorio, se recomienda y considera una buena costumbre escribir las etiquetas siempre en minúsculas.
+                       </p>
+                       <h3>Atributo</h3>
+                       <p>
+                        En algunas etiquetas HTML, existen algunos atributos específicos (que pueden ser opcionales u obligatorios). Los atributos determinan cierta información sobre la etiqueta (o su modo de actuar) y generalmente van asociados a un valor determinado. Este par atributo-valor se escribe después del nombre de la etiqueta, separándola por espacio y antes del carácter > de la etiqueta de apertura:
+                       </p>
+                       <img src="./assets/img2/atributo.png" alt="atributo">
+                       <br>
+                       <p>
+                        En este caso, la etiqueta sería strong, el atributo id, el valor de id sería dato, mientras que el contenido de la etiqueta es Contenido. Por otro lado, y al igual que las etiquetas, cada atributo tiene una misión y comportamiento concreto. Aunque los valores pueden ir rodeados por comillas simples, se recomienda escribir el valor siempre entre comillas dobles.
+                       </p>
+                       <p>
+                        Existen 3 tipos de atributos dependiendo de sus valores:
+                       </p>
+                       <ol>• <strong>Conjunto finito de valores:</strong> Son los atributos en los que puedes especificarle una serie de valores limitada. Cualquier otro valor que no sea uno de ellos, no será válido.</ol>
+                        <ol>• <strong>Valores libres: </strong> Son los atributos en los que puedes especificar un valor libremente, como una dirección URL o un texto, y no existe una serie de valores específicos para escribir.</ol>
+                        <ol>• <strong>Valores booleanos: </strong> Son los atributos que deben tener un valor verdadero (true) o un valor falso (false). En HTML5 estos atributos se escriben sin valor (solo el atributo) si son verdaderos y se omiten para indicar que son falsos.</ol>
+                        
+                            
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapse7">
+                        CONTENIDO DE LA ETIQUETA
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-heading7">
+                    <div class="accordion-body">
+                        
+                        <P>
+                            En el interior de la etiqueta HTML (después de la etiqueta de apertura y antes de la etiqueta de cierre) se debe colocar la información que queremos que sea afectada por dicha etiqueta. En el siguiente ejemplo se ve como contiene un fragmento de texto:
+                        </P>
+                        <img src="./assets/img2/contenidoEtiqueta.png" alt="contenidoEtiqueta">
+                        <br>
+                        <p>
+                            Ten en cuenta que una etiqueta puede tener varios pares atributo-valor, como se ve en el ejemplo anterior, pero nunca se debe repetir el mismo atributo en una misma etiqueta varias veces, ya que sobreescribiría al anterior. El orden de los atributos no importa. Más adelante explicaremos que tipos de atributos existen y para que sirven.
+                        </p>
+                        <h2>Comentario HTML</h2>
+                        <P>
+                            Los comentarios son una práctica muy común y habitual en los desarrolladores o programadores. Se basa en introducir breves fragmentos de texto que el navegador ignora y no tendrá en cuenta a la hora de crear la página visualmente, pero que a nosotros nos sirven de ayuda para documentar algún detalle, explicar algo importante o simplemente introducir algún texto que consideramos relevante:
+                        </P>
+                        <img src="./assets/img2/comentario.png" alt="comentario">
+                        <br>
+                        <br>
+                        <h3>Identificador de etiqueta (id)</h3>
+                        <p>
+                            En HTML, podemos darle un identificador a una etiqueta HTML y de esta forma darle un nombre. Simplemente, añadimos el atributo id y colocamos el nombre como valor de ese atributo. Ese nombre de identificador no debe empezar nunca por un número y puede contener letras mayúsculas, minúsculas, signos especiales (guión, guión bajo...) o números:
+                        </p>
+                        <img src="./assets/img2/id.png" alt="imagen id">
+                        <br>
+                        <p>Los id se suelen indicar cuando queremos localizar zonas específicas que sabemos que no se van a repetir en esa misma página.</p>
+                        <h3>Clases de etiquetas (class)</h3>
+                        <p>
+                            Las clases funcionan de una forma muy similar a los id, pero son mucho más flexibles. En primer lugar, no tienen la limitación de los ids, por lo que su nombre se puede repetir y no es necesario que aparezca sólo una vez por página.
+
+                                De hecho, la idea de las clases es establecer géneros o tipos de etiquetas, a los que les asociemos características comunes. Sigamos con el ejemplo anterior:
+
+                        </p>
+                        <img src="./assets/img2/clase.png" alt="clase">
+                        <br>
+                        <p>
+                            Obsérvese que, al tener la misma clase «anuncio», podemos realizar acciones para todas las etiquetas de ese tipo y no tener que hacerlo para cada una de ellas por separado. Un ejemplo clásico donde se ve bien su utilidad, es respecto a utilizar ids y clases para dar estilo CSS, donde aplicaremos unos estilos concretos a todas las etiquetas HTML con clase «anuncio».
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </div>
+
+    <div class="container bg-light  rounded-1" data-aos="fade-down">
+        <h2 class="display-5"><strong>Contenido del Curso CSS</strong></h2>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        CSS
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p><strong>¿Que es CSS ? </strong>Las siglas CSS (Cascading Style Sheets) significan «Hojas de estilo en cascada» y parten de un concepto simple pero muy potente: aplicar estilos (colores, formas, márgenes, etc...) a uno o varios documentos (generalmente documentos HTML, páginas webs) de forma masiva.
+
+                                    Se le denomina estilos en cascada porque se aplican de arriba a abajo (siguiendo un patrón denominado herencia que trataremos más adelante) y en el caso de existir ambigüedad, se siguen una serie de normas para resolverla.
+                                    
+                                    
+
+
+                                    </p>
+                                    <p>
+                                        La idea de CSS es la de utilizar el concepto de separación de presentación y contenido, intentando que los documentos HTML incluyan sólo información y datos, relativos al significado de la información a transmitir (el contenido), y todos los aspectos relacionados con el estilo (diseño, colores, formas, etc...) se encuentren en un documento CSS independiente (la presentación):
+                                        De esta forma, se puede unificar todo lo relativo al diseño visual en un solo documento CSS, y con ello, varias ventajas:
+
+                                        Si necesitamos hacer modificaciones visuales lo hacemos en un sólo lugar. No necesitamos editar todo el HTML en cuestión por separado.
+                                    </p>
+                                    <p>
+                                        Se reduce la duplicación de estilos en diferentes lugares, por lo que es más fácil de organizar y hacer cambios. Además, al final la información a transmitir es considerablemente menor (las páginas se descargan más rápido).
+
+                                        Es más fácil crear versiones diferentes de presentación para otros tipos de dispositivos: tablets, smartphones o dispositivos móviles, etc...
+
+                                    </p>
+
+                            </div>
+
+                            <div class="col-lg-4">
+                                <img src="./assets/img2/propiedaCss.jpeg" class="img-fluid rounded " height="200"
+                                    width="300" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        PARA QUÉ SIRVE CSS
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                            <P>
+                            El código CSS hace la vida más fácil al desarrollador front-end al separar las estructura de un documento HTML de su presentación. Dicho de otro modo el HTML actuaría como es esqueleto de la web, definiendo su estructura básica, y el CSS añadiría toda la capa de personalización sobre el que la web define su aspecto final.
+
+                            Siguiendo este fundamento resulta muy fácil para un diseñador web realizar cambios en la apariencia de una web sin afectar de manera dramática a su contenido. El contenido siempre será el mismo, solo cambia como aquello que podemos ver. CSS es fácil de entender y aprender, y nos da un potente control de cómo diseñar los documentos HTML.
+                            </P>
+                        
+                            <P>
+                                Por ejemplo, gracias al CSS podemos definir que todas las etiquetas H1 de un texto cambie su apariencia por aquella que definamos, cambiando colores, fuentes y añadiendo efectos sin modificar nada del contenido que sirve de base. Imagina ahora si tuvieras que hacerlo revisando línea a línea.
+
+                                    Por tanto la principal ventaja del CSS es que al poder ordenar nuestras preferencias de estilo en un único documento independiente ahorramos una considerable cantidad de tiempo al escribir nuestras órdenes CSS en forma de plantilla una única vez para ser aplicado luego a todos las páginas que componen nuestra página web.
+                                    
+                            </P>
+                            <P>
+                                Pero no es la única ventaja. Gracias a esto también el rendimiento de nuestra web se ve incrementado cargando de una manera más rápida pues no es necesario escribir etiquetas HTML continuamente y al tener que insertar una menor cantidad de código también su mantenimiento es mucho menor. Un cambio en el CSS y nuestra página se actualizará al momento.
+                            </P>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        ¿CÓMO FUNCIONA CSS?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        
+                        <p>
+                            Al contrario de lo que algunas personas piensan CSS no es un lenguaje de programación. En realidad interactúa con la Web pero lo hace en colaboración de otros lenguajes de programación.
+                        </p>
+                        
+                        <p>
+                            CSS funciona de una manera muy simple. Los navegadores Web al aplicar las reglas CSS a un documento modifican la manera en que este nos es presentado. Todo se produce de manera transparente al usuario. Estas reglas se componen de dos elementos clave. El primero es un conjunto de propiedades con valores establecidos para actualizar la presentación del contenido HTML. El segundo elemento son los selectores. Estos nos ayudan a seleccionar los elementos afectados por el nuevo valor de la propiedad. De esta manera evitamos que el CSS afecte a todos los elementos del HTML y solo aquellos que queramos. Por ejemplo a los elementos contenidos en primer parrafo de nuestro documento o seleccionar de manera alterna las filas de una tabla.
+                        </p>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapse6">
+                        FORMAS DE INCLUIR ESTILOS EN HTML
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-heading6">
+                    <div class="accordion-body">
+                        
+                        <p>
+        
+
+                            En principio, tenemos tres formas diferentes de hacerlo, siendo la primera la más común y la última la menos habitual:
+
+                        </p>
+                        <img src="./assets/img2/css1.png" alt="imagen css1">
+                        <br>
+                        
+                        <h3>Enlace a CSS externo (link) </h3>
+                        <p>
+                            En la cabecera de nuestro documento HTML, más concretamente en el bloque <head></head>, podemos incluir una etiqueta <link> con la que establecemos una relación entre el documento actual y el archivo CSS que indicamos en el atributo href:
+                        </p>
+                        <img src="./assets/img2/css2.png" alt="imagen css2">
+                        <br>
+                        <p>
+                            De esta forma, los navegadores sabrán que deben aplicar los estilos que se encuentren en el archivo index.css. Se aconseja escribir esta línea lo antes posible (sobre todo, antes de los scripts), obligando así al navegador a aplicar los estilos cuanto antes y eliminar la falsa percepción visual de que la página está en blanco y no ha sido cargada por completo.
+                        </p>
+                        <h3>Incluir CSS en el HTML (style)</h3>
+                        <p>
+                            Otra de las formas habituales que existen para incluir estilos CSS en nuestra página es la de añadirlos directamente en el documento HTML, a través de una etiqueta style que contendrá el código CSS:
+                        </p>
+                        <img src="./assets/img2/css3.png" alt="imagen css3">
+                        <br>
+                        <p>
+                            Este sistema puede servirnos en ciertos casos particulares, pero hay que darle prioridad al método anterior (CSS externo), ya que incluyendo el código CSS en el interior del archivo HTML arruinamos la posibilidad de tener el código CSS en un documento a parte, pudiendo reutilizarlo y enlazarlo desde otros documentos HTML mediante la etiqueta link.
+                        </p>
+
+                        <h3>Estilos en línea (atributo style)</h3>
+                        <p>
+                            Por último, la tercera forma de aplicar estilos en un documento HTML es hacerlo directamente, a través del atributo style de la propia etiqueta donde queramos aplicar el estilo, colocando ahí las propiedades CSS:
+                        </p>
+                        <img src="./assets/img2/css4.png" alt="imagen css4">
+                        <br>
+                        <p>
+                            De la misma forma que en el método anterior, con la etiqueta style, se recomienda no utilizar este método salvo en casos muy específicos y justificados, ya que los estilos se asocian a la etiqueta HTML en cuestión y no pueden reutilizarse.
+                        </p>
+                        
+                            
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapse7">
+                        SINTAXIS BASICA
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-heading7">
+                    <div class="accordion-body">
+                        
+                        <P>
+                            La estructura CSS se basa en reglas que tienen el siguiente formato:
+                        </P>
+                        <img src="./assets/img2/css5.png" alt="imagen css5">
+                        <br>
+                        <ol>• <strong>Selector: </strong> El selector es el elemento HTML que vamos a seleccionar del documento para aplicarle un estilo concreto. Por ejemplo, con p seleccionaríamos todas las etiquetas <p> del HTML. Más adelante veremos que esto puede ser mucho más complejo, y dedicaremos una serie de capítulos exclusivamente a este tema. </ol>
+                        <ol>• <strong>Propiedad: </strong> La propiedad es una de las diferentes características que brinda el lenguaje CSS y que aplicaremos al selector para darle estilo.</ol>
+                        <ol>• <strong>Valor: </strong> Cada propiedad CSS tiene una serie de valores concretos a que se le pueden asignar, con los que tendrá uno u otro comportamiento.</ol>
+                        <p>
+                            Con todo esto le iremos indicamos al navegador que, para cada etiqueta (selector especificado) debe aplicar las reglas (propiedad y valor) indicadas.
+                        </p>
+                        <img src="./assets/img2/css6.png" alt="imagen css6">
+                        <br>
+                        <p>
+                            En este caso, estamos seleccionando todas las etiquetas <p> del documento HTML (en este ejemplo es una sola, pero si existieran más se aplicaría a todas), y les aplicaremos el estilo indicado: color de texto blue.
+                                Cada una de estas reglas se terminará con el carácter punto y coma (;), seguido de la siguiente regla. El último punto y coma es opcional y se puede omitir si se desea.
+                                
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </div>
+
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">Copyright &copy; Página web desarrollada por el equipo Bichotas <br>2021</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+
+}
+
+body{
+    background-color: rgb(104, 129, 240);
+    text-align: center;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+ul{
+    background-color: black;
+
+}
+h5{
+    background-color: white;
+    color: black;
+}
+
+p{
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+}
+
