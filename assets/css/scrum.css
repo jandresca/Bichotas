@@ -11,7 +11,7 @@ body {
 
 .bannerScrum{
   /* por favor cambiar la ruta de la imagen de la página */
-  background-image: url(../imgsc/scrumban.png);
+  background-image: url(../img/scrumban.png);
   height: 550px;
   background-repeat: no-repeat;
   background-size: cover;

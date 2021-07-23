@@ -11,7 +11,7 @@
   
   .banner {
     /* por favor cambiar la ruta de la imagen de la página */
-    background-image: url(../imgj/Git-rename-branch.jpg);
+    background-image: url(../img/Git-rename-branch.jpg);
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
