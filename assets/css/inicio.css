@@ -29,3 +29,26 @@ p{
     font-size: 20px;
 }
 
+.container{
+    max-width: 1369px;
+}
+
+.containeer{
+    padding-right: 5%;
+    padding-left: 5%;
+    
+
+}
+.containeer2{
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: solid blanchedalmond 4px;
+    border-radius: 23px;
+    
+
+}
+.containeer2 h3{
+    color: white;
+}

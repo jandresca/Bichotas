@@ -11,6 +11,10 @@
   background-color: rgb(40, 38, 44);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.bodyjs{
+  background-color: rgb(245, 203, 14);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 /*Footer de las páginas*/
 .footer1 {
   background-color: black;
