@@ -1,34 +1,122 @@
-let cuestionario = document.getElementById("cuestionario");
 
-
-const encuesta = () => {
-    let nombreU = prompt("Digite por favor su nombre")
-    if (nombreU == null || nombreU == "") {
-        alert("Por favor ingrese su nombre o no puede continuar")
+function printError(elemId, hintMsg) {
+    document.getElementById(elemId).innerHTML = hintMsg;
+  }
+  
+  function validateForm() {
+    //preguntas
+    let p1 = document.Form.p1.value;
+    let p2 = document.Form.p2.value;
+    let p3 = document.Form.p3.value;
+    let p4 = document.Form.p4.value;
+    let p5 = document.Form.p5.value;
+    var nombre = document.Form.nombre.value;
+    let p1Err = p2Err = p3Err =p4Err=p5Err = nombreErr= true;
+  
+    // validación del formulario
+    a = p1.charAt(0);
+    b = p2.charAt(0);
+    c = p3.charAt(0);
+    d = p4.charAt(0);
+    e = p5.charAt(0);
+    //alert(d);
+  
+  //validar campo nombre
+    if (nombre == "") {
+      printError("nombreErr", "Por favor ingrese su Nombre ");
     } else {
-        pre1 = prompt("Ingresa solo verdadero o falso a las siguientes preguntas \n Las siglas la lógica es la ciencia que estudia los métodos de razonamiento la cual proporciona alguna reglas y técnicas para determinar si un argumento es válido o no, indica la forma correcta de obtener respuestas y los métodos para llegar a ellas.")
-        pre2 = pre1.toLowerCase();
-        if (pre2 === "verdadero") {
-            pre1 = prompt("Ingresa solo verdadero o falso a las siguientes preguntas \n Ciencia que estudia los procedimientos para distinguir si un razonamiento es correcto o incorrecto.")
-            pre2 = pre1.toLowerCase();
-            if (pre2 === "verdadero") {
-                pre1 = prompt("Ingresa solo verdadero o falso a las siguientes preguntas \n Es la parte de la lógica que estudia las proposiciones y símbolos utilizados en nuevas formaciones de las mismas que podrán ser verdaderas o falsas, señaladas por reglas formales, llamados conectores lógicos.")
-            pre2 = pre1.toLowerCase();
-            if (pre2 === "verdadero") {
-                alert("Felicidades " + nombreU + " acertaste en todas estas en buen camino hacia la programación")
-            } else {
-                alert("Lo siento estas equivocado por favor intenta de nuevo")  
-            }
-            } else {
-                alert("Lo siento estas equivocado por favor intenta de nuevo")  
-            }
-        } else {
-            alert("Lo siento estas equivocado por favor intenta de nuevo")
-        }
+      var regex =
+        /^[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ1234567890ñÑ.,-]{3,100}$/;
+      //var regex = /^[a-zA-áéíóúñüàè]{5,50}$/;
+      if (regex.test(nombre) === false) {
+        printError(
+          "nombreErr",
+          "Por favor ingrese un Nombre valido y con Max 100 letras"
+        );
+      } else {
+        printError("nombreErr", "");
+        nombreErr = false;
+      }
     }
-}       
-
-
-cuestionario.onclick = function () {
-    encuesta();
-}
+    //primera pregunta
+    if (a === "v" || a === "f") {
+      p1Err = false;
+    }
+  
+    if (p1 == "") {
+      printError("p1Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p1Err", "");
+      p1Err = false;
+    }
+  
+    //segunda pregunta
+    if (b === "v" || b === "f") {
+      p1Err = false;
+    }
+  
+    if (p2 == "") {
+      printError("p2Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p2Err", "");
+      p2Err = false;
+    }
+  
+    //tercera pregunta
+    if (c === "v" || c === "f") {
+      p3Err = false;
+    }
+  
+    if (p3 == "") {
+      printError("p3Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p3Err", "");
+      p3Err = false;
+    }
+  
+     //Cuarta pregunta
+     if (d === "v" || d === "f") {
+      p4Err = false;
+    }
+  
+    if (p4 == "") {
+      printError("p4Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p4Err", "");
+      p4Err = false;
+    }
+  
+  
+    //Quinta pregunta
+    if (e === "v" || e === "f") {
+      p5Err = false;
+    }
+  
+    if (p5 == "") {
+      printError("p5Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p5Err", "");
+      p5Err = false;
+    }
+  
+  
+    let buenas =0;
+  
+    // validación de respuestas
+    if ((p1Err || p2Err || p3Err || p4Err || p5Err || nombreErr) == true) {
+      return false;
+    } else {
+      if (a === "v" && b === "f" && c === "v" && d === "f" && e === "v") {
+        alert(`Felicidades Aprobaste el Examen ${nombre}, preguntas correctas 5/5`);
+      } else {
+        a === "v"?buenas++:"";
+        b === "v"?buenas++:"";
+        c === "v"?buenas++:"";
+        d === "v"?buenas++:"";
+        e === "v"?buenas++:"";
+  
+        alert(`No Aprobaste el Examen ${nombre}, el numero de preguntas buenas son ${buenas}/5, por favor intentalo de nuevo`);
+      }
+    }
+  }
+  
