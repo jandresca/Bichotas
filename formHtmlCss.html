@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLCSS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/htmlCss.css">
+    <style>
+        .error {
+            background-color: rgb(219, 8, 8);
+            color: cornsilk;
+        }
+    </style>
+</head>
+
+<body class="body1">
+    <br>
+    <br>
+    <div class="container bg-light rounded-1 text-center" data-aos="fade-down">
+        <img src="assets/img/Helprogram1.png" width="200" class="logo">
+        <h1 class="display-5">Cuestionario final de HTML y CSS</h1>
+        <a href="./index.html" class="btn btn-dark">Volver al Inicio</a>
+        <br>
+        <br>
+        <form name="Form" onsubmit="return validateForm()" class="" id="Form">
+
+            <div class="card">
+                <p><strong>Por favor Ingrese su Nombre</strong></p>
+                <input class="form-control" type="text" name="nombre" maxlength="100">
+                <div class="error" id="nombreErr"></div>
+            </div>
+            
+            <br>
+            <div class="card">
+                <p><strong>Primera pregunta</strong>, ¿Una página con extensión htm o html comienza por html (entre signos mayor y menor)? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p1" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p1" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p1Err"></div>
+            </div>
+            <br>
+
+            <div class="card">
+                <p><strong>Segunda pregunta</strong>, ¿Para insertar una fila en una tabla usamos td (entre signos menor y mayor)?
+                    verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p2" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p2" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p2Err"></div>
+            </div>
+            <br>
+
+
+            <div class="card">
+                <p><strong>Tercera pregunta</strong>, ¿Para sacar una lista desplegable se usa (select)?
+                    verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p3" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p3" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p3Err"></div>
+            </div>
+            <br>
+            <div class="card">
+                <p><strong>Cuarta pregunta</strong>, ¿Para crear una celda de una tabla se usa (td)? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p4" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p4" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p4Err"></div>
+            </div>
+
+            <div class="card">
+                <p><strong>Quinta pregunta</strong>, ¿Para comenzar un formulario usamos formulary (entre signos mayor y menor)? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p5" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p5" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p5Err"></div>
+            </div>
+
+            <div class="card">
+                <p><strong>Sexta pregunta</strong>, ¿CSS controla el aspecto gráfico de una página web mediante hojas de estilo indicando al navegador como se deben visualizar los elementos de un documento HTML? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p6" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p6" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p6Err"></div>
+            </div>
+
+            <div class="card">
+                <p><strong>Septima pregunta</strong>, ¿Los navegadores ( Firefox, Chrome, Safari, etc) establecen valores CSS por defecto a las etiquetas HTML.? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p7" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p7" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p7Err"></div>
+            </div>
+
+            <div class="card">
+                <p><strong>Octava pregunta</strong>, ¿La etiqueta (style) se escribe dentro del (body)? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p8" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p8" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p8Err"></div>
+            </div>
+
+            <div class="card">
+                <p><strong>Novena pregunta</strong>, ¿Para mantener el CSS separado del HTML ( es decir en otro archivo), se utiliza el elemento (link) en la cabecera.? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p9" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p9" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p9Err"></div>
+            </div>
+
+            <div class="card">
+                <p><strong>Decima pregunta</strong>, ¿box-sizing nos permite establecer la forma en que se calculará el ancho y alto total de un elemento.? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p10" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p10" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p10Err"></div>
+            </div>
+
+
+
+            <input class="btn btn-dark" type="submit" id="submit" style="width: 100%;" value="ENVIAR">
+            <br>
+            <br>
+        </form>
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/htmlycss.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
