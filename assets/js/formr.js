@@ -20,7 +20,7 @@ function printError(elemId, hintMsg) {
     c = p3.charAt(0);
     d = p4.charAt(0);
     e = p5.charAt(0);
-    alert(d);
+  
   
   //validar campo nombre
     if (nombre == "") {
