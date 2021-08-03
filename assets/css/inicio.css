@@ -52,3 +52,11 @@ p{
 .containeer2 h3{
     color: white;
 }
+
+.logo{
+    position: absolute;
+    left: 4%;
+    height: 60px;
+    top: 2%;
+
+}
