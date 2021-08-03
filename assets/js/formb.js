@@ -19,7 +19,7 @@ function validateForm() {
   c = p3.charAt(0);
   d = p4.charAt(0);
   e = p5.charAt(0);
-  alert(d);
+  //alert(d);
 
 //validar campo nombre
   if (nombre == "") {
@@ -49,6 +49,7 @@ function validateForm() {
     printError("p1Err", "");
     p1Err = false;
   }
+
   //segunda pregunta
   if (b === "v" || b === "f") {
     p1Err = false;
@@ -60,6 +61,7 @@ function validateForm() {
     printError("p2Err", "");
     p2Err = false;
   }
+
   //tercera pregunta
   if (c === "v" || c === "f") {
     p3Err = false;
@@ -73,15 +75,28 @@ function validateForm() {
   }
 
    //Cuarta pregunta
-   if (a === "v" || a === "f") {
-    p1Err = false;
+   if (d === "v" || d === "f") {
+    p4Err = false;
   }
 
-  if (p1 == "") {
-    printError("p1Err", "Por favor selecciona una opción (Verdadero o Falso)");
+  if (p4 == "") {
+    printError("p4Err", "Por favor selecciona una opción (Verdadero o Falso)");
   } else {
-    printError("p1Err", "");
-    p1Err = false;
+    printError("p4Err", "");
+    p4Err = false;
+  }
+
+
+  //Quinta pregunta
+  if (e === "v" || e === "f") {
+    p5Err = false;
+  }
+
+  if (p5 == "") {
+    printError("p5Err", "Por favor selecciona una opción (Verdadero o Falso)");
+  } else {
+    printError("p5Err", "");
+    p5Err = false;
   }
 
 
