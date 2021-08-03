@@ -6,7 +6,7 @@ h1{
 }
 
 body{
-    background-color: rgb(104, 129, 240);
+    background-color: #C7CEEA;
     text-align: center;
 }
 
@@ -29,9 +29,7 @@ p{
     font-size: 20px;
 }
 
-.container{
-    max-width: 1369px;
-}
+
 
 .containeer{
     padding-right: 5%;
