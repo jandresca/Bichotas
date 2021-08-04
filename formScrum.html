@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .error {
+            background-color: rgb(219, 8, 8);
+            color: cornsilk;
+        }
+    </style>
+</head>
+
+<body class="body1">
+    <br>
+    <br>
+    <div class="container bg-light rounded-1 text-center" data-aos="fade-down">
+        <img src="assets/img/Helprogram1.png" width="200" class="logo">
+        <h1 class="display-5">Cuestionario final de Bootstrap</h1>
+        <a href="./index.html" class="btn btn-dark">Volver al Index</a>
+        <br>
+        <br>
+        <form name="Form" onsubmit="return validateForm()" class="" id="Form">
+
+            <div class="card">
+                <p><strong>Por favor Ingrese su Nombre</strong></p>
+                <input class="form-control" type="text" name="nombre" maxlength="100">
+                <div class="error" id="nombreErr"></div>
+            </div>
+            
+            <br>
+            <div class="card">
+                <p><strong>Primera pregunta</strong> Scrum solo sirve para realizar trabajos individuales
+                    verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p1" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p1" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p1Err"></div>
+            </div>
+            <br>
+
+            <div class="card">
+                <p><strong>Segunda pregunta</strong>, En Scrum se realizan entregas parciales y regulares del producto final
+                    verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p2" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p2" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p2Err"></div>
+            </div>
+            <br>
+
+
+            <div class="card">
+                <p><strong>Tercera pregunta</strong>, Un sprint es un período breve de tiempo fijo en el que un equipo de scrum trabaja para completar una cantidad de trabajo establecida.
+                    verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p3" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p3" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p3Err"></div>
+            </div>
+            <br>
+            <div class="card">
+                <p><strong>Cuarta pregunta</strong>, ¿ El Scrum Diario es una reunión con un bloque de tiempo de 30 minutos web verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p4" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p4" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p4Err"></div>
+            </div>
+            <br>
+
+            <div class="card">
+                <p><strong>Quinta pregunta</strong>, Durante la Revisión de Sprint, el Equipo Scrum y los interesados colaboran acerca de lo que se hizo durante el Sprint? verdadero(v) o falso(f)</p>
+                <div class="form-inline">
+                    <p><input type="radio" name="p5" value="v"> Verdadero</p>
+                    <p><input type="radio" name="p5" value="f"> Falso</p>
+                </div>
+                <div class="error" id="p5Err"></div>
+            </div>
+            <br>
+            <br>
+
+
+            <input class="btn btn-dark" type="submit" id="submit" style="width: 100%;" value="ENVIAR">
+            <br>
+            <br>
+        </form>
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/formscrum.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
