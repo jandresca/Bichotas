@@ -28,13 +28,13 @@
         <br>
         <br>
         <form name="Form" onsubmit="return validateForm()" class="" id="Form">
-
+            <input type="hidden" name="t" value="1">
             <div class="card">
                 <p><strong>Por favor Ingrese su Nombre</strong></p>
                 <input class="form-control" type="text" name="nombre" maxlength="100">
                 <div class="error" id="nombreErr"></div>
             </div>
-            
+
             <br>
             <div class="card">
                 <p><strong>Primera pregunta</strong>, ¿Bootstrap es un framework front-end utilizado para desarrollar
@@ -72,7 +72,8 @@
             </div>
             <br>
             <div class="card">
-                <p><strong>Cuarta pregunta</strong>, ¿Hay diferentes formas de descargar este framework. Una de ellas es descargando la versión compilada de los códigos CSS y JavaScript? verdadero(v) o falso(f)</p>
+                <p><strong>Cuarta pregunta</strong>, ¿Hay diferentes formas de descargar este framework. Una de ellas es
+                    descargando la versión compilada de los códigos CSS y JavaScript? verdadero(v) o falso(f)</p>
                 <div class="form-inline">
                     <p><input type="radio" name="p4" value="v"> Verdadero</p>
                     <p><input type="radio" name="p4" value="f"> Falso</p>
@@ -82,7 +83,8 @@
             <br>
 
             <div class="card">
-                <p><strong>Quinta pregunta</strong>, ¿Se puede descargar el framework es a través de los administradores de paquetes? verdadero(v) o falso(f)</p>
+                <p><strong>Quinta pregunta</strong>, ¿Se puede descargar el framework es a través de los administradores
+                    de paquetes? verdadero(v) o falso(f)</p>
                 <div class="form-inline">
                     <p><input type="radio" name="p5" value="v"> Verdadero</p>
                     <p><input type="radio" name="p5" value="f"> Falso</p>
