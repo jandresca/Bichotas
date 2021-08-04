@@ -1,8 +1,10 @@
-const printError =(elemId, hintMsg) =>{
+let mensaje = document.getElementById("mensaje");
+
+function printError(elemId, hintMsg) {
   document.getElementById(elemId).innerHTML = hintMsg;
 }
 
-const validateForm =() => {
+function validateForm() {
   //preguntas
   let p1 = document.Form.p1.value;
   let p2 = document.Form.p2.value;
@@ -18,9 +20,8 @@ const validateForm =() => {
   c = p3.charAt(0);
   d = p4.charAt(0);
   e = p5.charAt(0);
-  //alert(d);
 
-  //validar campo nombre
+//validar campo nombre
   if (nombre == "") {
     printError("nombreErr", "Por favor ingrese su Nombre ");
   } else {
@@ -38,7 +39,9 @@ const validateForm =() => {
     }
   }
   //primera pregunta
-  if (a === "v" || a === "f") p1Err = false;
+  if (a === "v" || a === "f") {
+    p1Err = false;
+  }
 
   if (p1 == "") {
     printError("p1Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -46,20 +49,21 @@ const validateForm =() => {
     printError("p1Err", "");
     p1Err = false;
   }
-
   //segunda pregunta
-  if (b === "v" || b === "f") p1Err = false;
-  
+  if (b === "v" || b === "f") {
+    p1Err = false;
+  }
+
   if (p2 == "") {
     printError("p2Err", "Por favor selecciona una opción (Verdadero o Falso)");
   } else {
     printError("p2Err", "");
     p2Err = false;
   }
-
   //tercera pregunta
-  if (c === "v" || c === "f")  p3Err = false;
-
+  if (c === "v" || c === "f") {
+    p3Err = false;
+  }
 
   if (p3 == "") {
     printError("p3Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -68,9 +72,10 @@ const validateForm =() => {
     p3Err = false;
   }
 
-  //Cuarta pregunta
-  if (d === "v" || d === "f") p4Err = false;
-  
+//cuarta pregunta
+if (d === "v" || d === "f") {
+    p4Err = false;
+  }
 
   if (p4 == "") {
     printError("p4Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -78,33 +83,34 @@ const validateForm =() => {
     printError("p4Err", "");
     p4Err = false;
   }
-  //Quinta pregunta
-  if (e === "v" || e === "f")  p5Err = false;
+
+  //quinta pregunta
+if (e === "v" || e === "f") {
+    p5Err = false;
+  }
+
   if (p5 == "") {
     printError("p5Err", "Por favor selecciona una opción (Verdadero o Falso)");
   } else {
     printError("p5Err", "");
     p5Err = false;
   }
-  let buenas = 0;
+
+  let buenas =0;
   // validación de respuestas
   if ((p1Err || p2Err || p3Err || p4Err || p5Err || nombreErr) == true) {
     return false;
   } else {
-    if (a === "v" && b === "v" && c === "v" && d === "v" && e === "v") {
-      alert(
-        `Felicidades Aprobaste el Examen ${nombre}, preguntas correctas 5/5`
-      );
+    if (a === "v" && b === "f" && c === "v" && d === "f" && e === "v") {
+      alert(`Felicidades Aprobaste el Examen ${nombre}, preguntas correctas 5/5`);
     } else {
-      a === "v" ? buenas++ : "";
-      b === "v" ? buenas++ : "";
-      c === "v" ? buenas++ : "";
-      d === "v" ? buenas++ : "";
-      e === "v" ? buenas++ : "";
+      a === "v"?buenas++:"";
+      b === "f"?buenas++:"";
+      c === "v"?buenas++:"";
+      d === "f"?buenas++:"";
+      e === "v"?buenas++:"";
 
-      alert(
-        `No Aprobaste el Examen ${nombre}, el numero de preguntas buenas son ${buenas}/5, por favor intentalo de nuevo`
-      );
+      alert(`No Aprobaste el Examen ${nombre}, el numero de preguntas buenas son ${buenas}/5, por favor intentalo de nuevo`);
     }
   }
 }
