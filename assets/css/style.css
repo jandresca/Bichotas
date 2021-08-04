@@ -24,7 +24,7 @@
 }
 /*Banner de las página de Boostrap*/
 .banner1 {
-  background-image: url(../img/bootstrapj.png);
+  background-image: url(../img/bootstrap.gif);
   height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@
 
 /*Banner de las página de Lógica*/
 .banner2 {
-  background-image: url(../img/logicaj.png);
+  background-image: url(../img/logica.gif);
   height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
