@@ -47,9 +47,8 @@ const validateForm = () => {
     }
   }
   //primera pregunta
-  if (a === "v" || a === "f") {
-    p1Err = false;
-  }
+  if (a === "v" || a === "f") p1Err = false;
+  
 
   if (p1 == "") {
     printError("p1Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -59,9 +58,8 @@ const validateForm = () => {
   }
 
   //segunda pregunta
-  if (b === "v" || b === "f") {
-    p2Err = false;
-  }
+  if (b === "v" || b === "f")  p2Err = false;
+  
 
   if (p2 == "") {
     printError("p2Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -70,9 +68,8 @@ const validateForm = () => {
     p2Err = false;
   }
   //tercera pregunta
-  if (c === "v" || c === "f") {
-    p3Err = false;
-  }
+  if (c === "v" || c === "f") p3Err = false;
+  
 
   if (p3 == "") {
     printError("p3Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -82,9 +79,8 @@ const validateForm = () => {
   }
 
   //Cuarta pregunta
-  if (d === "v" || d === "f") {
-    p4Err = false;
-  }
+  if (d === "v" || d === "f") p4Err = false;
+  
 
   if (p4 == "") {
     printError("p4Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -94,9 +90,8 @@ const validateForm = () => {
   }
 
   //quinta pregunta
-  if (e === "v" || e === "f") {
-    p5Err = false;
-  }
+  if (e === "v" || e === "f") p5Err = false;
+  
 
   if (p5 == "") {
     printError("p5Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -105,9 +100,8 @@ const validateForm = () => {
     p5Err = false;
   }
   //sexta pregunta
-  if (f === "v" || f === "f") {
-    p6Err = false;
-  }
+  if (f === "v" || f === "f") p6Err = false;
+  
 
   if (p6 == "") {
     printError("p6Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -116,9 +110,8 @@ const validateForm = () => {
     p6Err = false;
   }
   //septima pregunta
-  if (g === "v" || g === "f") {
-    p7Err = false;
-  }
+  if (g === "v" || g === "f") p7Err = false;
+  
 
   if (p7 == "") {
     printError("p7Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -128,9 +121,8 @@ const validateForm = () => {
   }
 
   //octava pregunta
-  if (h === "v" || h === "f") {
-    p8Err = false;
-  }
+  if (h === "v" || h === "f") p8Err = false;
+  
 
   if (p8 == "") {
     printError("p8Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -140,9 +132,7 @@ const validateForm = () => {
   }
 
   //novena pregunta
-  if (i === "v" || i === "f") {
-    p9Err = false;
-  }
+  if (i === "v" || i === "f") p9Err = false;
 
   if (p9 == "") {
     printError("p9Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -152,9 +142,8 @@ const validateForm = () => {
   }
 
   //decima pregunta
-  if (j === "v" || j === "f") {
-    p10Err = false;
-  }
+  if (j === "v" || j === "f") p10Err = false;
+
 
   if (p10 == "") {
     printError("p10Err", "Por favor selecciona una opción (Verdadero o Falso)");
@@ -186,10 +175,7 @@ const validateForm = () => {
       h === "f" ? buenas++ : "";
       i === "v" ? buenas++ : "";
       j === "v" ? buenas++ : "";
-
-      alert(
-        `No Aprobaste el Examen ${nombre}, el numero de preguntas buenas son ${buenas}/10, por favor intentalo de nuevo`
-      );
+      alert(`No Aprobaste el Examen ${nombre}, el numero de preguntas buenas son ${buenas}/10, por favor intentalo de nuevo` );
     }
   }
 };
