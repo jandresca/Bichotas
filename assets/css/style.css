@@ -50,6 +50,22 @@
   font-size: 80px;
   padding: 150px 50px;
 }
+
+.banner3 {
+  /* por favor cambiar la ruta de la imagen de la página */
+  background-image: url(../img/3.gif);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Color de la letra */
+  color: rgb(27, 19, 94);
+}
+.banner1 h3 {
+  text-align: right;
+  font-size: 80px;
+  padding: 150px 50px;
+}
+
 p {
   font-size: 20px;
 }
