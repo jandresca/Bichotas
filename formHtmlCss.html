@@ -19,26 +19,63 @@
 </head>
 
 <body class="body1">
+
+
+
+
+    <ul class="nav justify-content-center" style="
+    padding-bottom: 2%;
+    padding-top: 2%;">
+    <a class="navbar-brand" href="./index.html">
+      <img src="./assets/img/Helprogram1.png" class="logo" alt="logo" width="150">
+    </a>
+
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./info.html">Sobre Nosotros</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Cursos </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="htmlCss.html">HTML+CSS</a></li>
+        <li><a class="dropdown-item" href="logica.html">LÓGICA Y ALGORITMIA</a></li>
+        <li><a class="dropdown-item" href="js.html">JS</a></li>
+        <li><a class="dropdown-item" href="bootstrap.html">BOOSTRAP</a></li>
+        <li><a class="dropdown-item" href="repositorios.html">REPOSITORIOS</a></li>
+        <li><a class="dropdown-item" href="scrum.html">SCRUM</a></li>
+      </ul>
+    </li>
+
+  </ul>
+    
+    <div class="bannerCuestionario " data-aos="fade-down">
+        
+    </div>
     <br>
-    <br>
-    <div class="container bg-light rounded-1 text-center" data-aos="fade-down">
-        <img src="assets/img/Helprogram1.png" width="200" class="logo">
+    <div class="container rounded-1 text-center" data-aos="fade-down">
+      <br>
+        <div class="card card-padding">
         <h1 class="display-5">Cuestionario final de HTML y CSS</h1>
-        <a href="./index.html" class="btn btn-dark">Volver al Inicio</a>
+        <hr>
+        </div>
         <br>
         <br>
         <form name="Form" onsubmit="return validateForm()" class="" id="Form">
 
-            <div class="card">
-                <p><strong>Por favor Ingrese su Nombre</strong></p>
-                <input class="form-control" type="text" name="nombre" maxlength="100">
+            <div class="card card-padding">
+                <p>Nombre <i class="red">*</i></p>
+                <input class="form-control borde-abajo" type="text" name="nombre" maxlength="100" placeholder="Respuesta corta">
                 <div class="error" id="nombreErr"></div>
             </div>
 
             <br>
-            <div class="card">
-                <p><strong>Primera pregunta</strong>, ¿Una página con extensión htm o html comienza por html (entre
-                    signos mayor y menor)? verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Una página con extensión htm o html comienza por html (entre
+                    signos mayor y menor)? <i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p1" value="v"> Verdadero</p>
                     <p><input type="radio" name="p1" value="f"> Falso</p>
@@ -47,10 +84,9 @@
             </div>
             <br>
 
-            <div class="card">
-                <p><strong>Segunda pregunta</strong>, ¿Para insertar una fila en una tabla usamos td (entre signos menor
-                    y mayor)?
-                    verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Para insertar una fila en una tabla usamos td (entre signos menor
+                    y mayor)?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p2" value="v"> Verdadero</p>
                     <p><input type="radio" name="p2" value="f"> Falso</p>
@@ -60,9 +96,8 @@
             <br>
 
 
-            <div class="card">
-                <p><strong>Tercera pregunta</strong>, ¿Para sacar una lista desplegable se usa (select)?
-                    verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Para sacar una lista desplegable se usa (select)?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p3" value="v"> Verdadero</p>
                     <p><input type="radio" name="p3" value="f"> Falso</p>
@@ -70,9 +105,8 @@
                 <div class="error" id="p3Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Cuarta pregunta</strong>, ¿Para crear una celda de una tabla se usa (td)? verdadero(v) o
-                    falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Para crear una celda de una tabla se usa (td)?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p4" value="v"> Verdadero</p>
                     <p><input type="radio" name="p4" value="f"> Falso</p>
@@ -80,9 +114,9 @@
                 <div class="error" id="p4Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Quinta pregunta</strong>, ¿Para comenzar un formulario usamos formulary (entre signos mayor y
-                    menor)? verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Para comenzar un formulario usamos formulary (entre signos mayor y
+                    menor)? <i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p5" value="v"> Verdadero</p>
                     <p><input type="radio" name="p5" value="f"> Falso</p>
@@ -90,10 +124,10 @@
                 <div class="error" id="p5Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Sexta pregunta</strong>, ¿CSS controla el aspecto gráfico de una página web mediante hojas de
-                    estilo indicando al navegador como se deben visualizar los elementos de un documento HTML?
-                    verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿CSS controla el aspecto gráfico de una página web mediante hojas de
+                    estilo indicando al navegador como se deben visualizar los elementos de un documento HTML?<i class="red">*</i>
+                    </p>
                 <div class="form-inline">
                     <p><input type="radio" name="p6" value="v"> Verdadero</p>
                     <p><input type="radio" name="p6" value="f"> Falso</p>
@@ -101,9 +135,9 @@
                 <div class="error" id="p6Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Septima pregunta</strong>, ¿Los navegadores ( Firefox, Chrome, Safari, etc) establecen
-                    valores CSS por defecto a las etiquetas HTML.? verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Los navegadores ( Firefox, Chrome, Safari, etc) establecen
+                    valores CSS por defecto a las etiquetas HTML.?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p7" value="v"> Verdadero</p>
                     <p><input type="radio" name="p7" value="f"> Falso</p>
@@ -111,9 +145,8 @@
                 <div class="error" id="p7Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Octava pregunta</strong>, ¿La etiqueta (style) se escribe dentro del (body)? verdadero(v) o
-                    falso(f)</p>
+            <div class="card card-padding">
+                <p>¿La etiqueta (style) se escribe dentro del (body)?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p8" value="v"> Verdadero</p>
                     <p><input type="radio" name="p8" value="f"> Falso</p>
@@ -121,9 +154,9 @@
                 <div class="error" id="p8Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Novena pregunta</strong>, ¿Para mantener el CSS separado del HTML ( es decir en otro
-                    archivo), se utiliza el elemento (link) en la cabecera.? verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Para mantener el CSS separado del HTML ( es decir en otro
+                    archivo), se utiliza el elemento (link) en la cabecera.?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p9" value="v"> Verdadero</p>
                     <p><input type="radio" name="p9" value="f"> Falso</p>
@@ -131,9 +164,9 @@
                 <div class="error" id="p9Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Decima pregunta</strong>, ¿box-sizing nos permite establecer la forma en que se calculará el
-                    ancho y alto total de un elemento.? verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Box-sizing nos permite establecer la forma en que se calculará el
+                    ancho y alto total de un elemento.?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p10" value="v"> Verdadero</p>
                     <p><input type="radio" name="p10" value="f"> Falso</p>
@@ -144,7 +177,7 @@
             <br>
 
 
-            <input class="btn btn-dark" type="submit" id="submit" style="width: 100%;" value="ENVIAR">
+            <input class="btn btn-info" type="submit" id="submit" style="width: 24%;" value="ENVIAR">
             <br>
             <br>
         </form>
