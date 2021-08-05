@@ -18,27 +18,62 @@
     </style>
 </head>
 
-<body class="body1" style="background-color: rgb(245, 203, 14);">
+<body class="body1" style="background-color: #aee2ec;">
+
+    <ul class="nav justify-content-center" style="
+    padding-bottom: 2%;
+    padding-top: 2%;">
+    <a class="navbar-brand" href="./index.html">
+      <img src="./assets/img/Helprogram1.png" class="logo" alt="logo" width="150">
+    </a>
+
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./info.html">Sobre Nosotros</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Cursos </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="htmlCss.html">HTML+CSS</a></li>
+        <li><a class="dropdown-item" href="logica.html">LÓGICA Y ALGORITMIA</a></li>
+        <li><a class="dropdown-item" href="js.html">JS</a></li>
+        <li><a class="dropdown-item" href="bootstrap.html">BOOSTRAP</a></li>
+        <li><a class="dropdown-item" href="repositorios.html">REPOSITORIOS</a></li>
+        <li><a class="dropdown-item" href="scrum.html">SCRUM</a></li>
+      </ul>
+    </li>
+
+  </ul>
+    
+    <div class="bannerCuestionario " data-aos="fade-down">
+        
+    </div>
     <br>
-    <br>
-    <div class="container bg-light rounded-1 text-center" data-aos="fade-down">
-        <img src="assets/img/Helprogram1.png" width="200" class="logo">
-        <h1 class="display-5">Cuestionario final de JavaScript</h1>
-        <a href="./index.html" class="btn btn-dark">Volver al Index</a>
+    <div class="container rounded-1 text-center" data-aos="fade-down">
         <br>
+        <div class="card card-padding"><h1 class="display-5">Cuestionario final de JavaScript</h1>
+            <hr>
+        </div>
         <br>
+        
         <form name="Form" onsubmit="return validateForm()" class="" id="Form">
-            <input type="hidden" name="t" value="2">
-            <div class="card">
-                <p><strong>Por favor Ingrese su Nombre</strong></p>
-                <input class="form-control" type="text" name="nombre" maxlength="100">
+            <!--<input type="hidden" name="t" value="2">-->
+
+            <div class="card card-padding">
+                <p>Nombre <i class="red">*</i></p>
+                <input class="form-control borde-abajo" type="text" name="nombre" maxlength="100" placeholder="Respuesta corta">
                 <div class="error" id="nombreErr"></div>
             </div>
 
             <br>
-            <div class="card">
-                <p><strong>Primera pregunta</strong>, ¿Sublime Text, Atom, Notepad++, CoffeeCup – El Editor de HTML son
-                    herramientas para utilizar JS? verdadero(v) o falso(f)</p>
+            
+            <div class="card card-padding">
+                <p> ¿Sublime Text, Atom, Notepad++, CoffeeCup – El Editor de HTML son
+                    herramientas para utilizar JS? <i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p1" value="v"> Verdadero</p>
                     <p><input type="radio" name="p1" value="f"> Falso</p>
@@ -47,9 +82,9 @@
             </div>
             <br>
 
-            <div class="card">
-                <p><strong>Segunda pregunta</strong>, ¿Con javascript se le den los diseños dinamicos a las paginas?
-                    verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Con javascript se le den los diseños dinamicos a las paginas?
+                    <i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p2" value="v"> Verdadero</p>
                     <p><input type="radio" name="p2" value="f"> Falso</p>
@@ -59,12 +94,12 @@
             <br>
 
 
-            <div class="card">
-                <p><strong>Tercera pregunta</strong>, ¿Con este lenguaje de programación del lado del cliente (no en el
+            <div class="card card-padding">
+                <p> ¿Con este lenguaje de programación del lado del cliente (no en el
                     servidor) podemos crear efectos y animaciones sin ninguna interacción, o respondiendo a eventos
                     causados por el propio usuario tales como botones pulsados y modificaciones del DOM (document object
                     model).?
-                    verdadero(v) o falso(f)</p>
+                    <i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p3" value="v"> Verdadero</p>
                     <p><input type="radio" name="p3" value="f"> Falso</p>
@@ -72,8 +107,8 @@
                 <div class="error" id="p3Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Cuarta pregunta</strong>, ¿JavaScript es lo mismo que java? verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿JavaScript es lo mismo que java? <i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p4" value="v"> Verdadero</p>
                     <p><input type="radio" name="p4" value="f"> Falso</p>
@@ -81,9 +116,9 @@
                 <div class="error" id="p4Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Quinta pregunta</strong>, ¿Javascript es el lenguaje más empleado dentro del desarrollo
-                    fullstack? verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Javascript es el lenguaje más empleado dentro del desarrollo
+                    fullstack? <i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p5" value="v"> Verdadero</p>
                     <p><input type="radio" name="p5" value="f"> Falso</p>
@@ -92,7 +127,7 @@
             </div>
             <br>
 
-            <input class="btn btn-dark" type="submit" id="submit" style="width: 100%;" value="ENVIAR">
+            <input class="btn btn-info" type="submit" id="submit" style="width: 24%;" value="ENVIAR">
             <br>
             <br>
         </form>

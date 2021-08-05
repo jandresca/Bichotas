@@ -19,27 +19,60 @@
 </head>
 
 <body class="body2">
+    <ul class="nav justify-content-center" style="
+    padding-bottom: 2%;
+    padding-top: 2%;">
+    <a class="navbar-brand" href="./index.html">
+      <img src="./assets/img/Helprogram1.png" class="logo" alt="logo" width="150">
+    </a>
+
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./info.html">Sobre Nosotros</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Cursos </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="htmlCss.html">HTML+CSS</a></li>
+        <li><a class="dropdown-item" href="logica.html">LÓGICA Y ALGORITMIA</a></li>
+        <li><a class="dropdown-item" href="js.html">JS</a></li>
+        <li><a class="dropdown-item" href="bootstrap.html">BOOSTRAP</a></li>
+        <li><a class="dropdown-item" href="repositorios.html">REPOSITORIOS</a></li>
+        <li><a class="dropdown-item" href="scrum.html">SCRUM</a></li>
+      </ul>
+    </li>
+
+  </ul>
+    
+    <div class="bannerCuestionario " data-aos="fade-down">
+        
+    </div>
     <br>
-    <br>
-    <div class="container bg-light rounded-1 text-center" data-aos="fade-down">
-        <img src="assets/img/Helprogram1.png" width="200" class="logo">
+        
+    <div class="container rounded-1 text-center" data-aos="fade-down">
+        
+        <div class="card card-padding">
         <h1 class="display-5">Cuestionario final de Lógica y Algoritmia</h1>
-        <a href="./index.html" class="btn btn-dark">Volver al Index</a>
+            <hr>
+        </div>
         <br>
         <br>
         <form name="Form" onsubmit="return validateForm()" class="" id="Form">
             <input type="hidden" name="t" value="5">
-            <div class="card">
-                <p><strong>Por favor Ingrese su Nombre</strong></p>
-                <input class="form-control" type="text" name="nombre" maxlength="100">
+            <div class="card card-padding ">
+                <p>Nombre <i class="red">*</i></p>
+                <input class="form-control borde-abajo" type="text" name="nombre" maxlength="100" placeholder="Respuesta corta">
                 <div class="error" id="nombreErr"></div>
             </div>
 
             <br>
-            <div class="card">
-                <p><strong>Primera pregunta</strong>, ¿la lógica es la ciencia que estudia los métodos de razonamiento
-                    la cual proporciona alguna reglas y técnicas para determinar si un argumento es válido o no?
-                    verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿La lógica es la ciencia que estudia los métodos de razonamiento
+                    la cual proporciona alguna reglas y técnicas para determinar si un argumento es válido o no?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p1" value="v"> Verdadero</p>
                     <p><input type="radio" name="p1" value="f"> Falso</p>
@@ -48,10 +81,9 @@
             </div>
             <br>
 
-            <div class="card">
-                <p><strong>Segunda pregunta</strong>, ¿la lógica matematica no es una Ciencia que estudia los
-                    procedimientos para distinguir si un razonamiento es correcto o incorrecto?
-                    verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿La lógica matematica no es una Ciencia que estudia los
+                    procedimientos para distinguir si un razonamiento es correcto o incorrecto?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p2" value="v"> Verdadero</p>
                     <p><input type="radio" name="p2" value="f"> Falso</p>
@@ -61,10 +93,9 @@
             <br>
 
 
-            <div class="card">
-                <p><strong>Tercera pregunta</strong>, ¿Una proposición o enunciado es una oración que puede ser falsa o
-                    verdadera pero no ambas a la vez?
-                    verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>¿Una proposición o enunciado es una oración que puede ser falsa o
+                    verdadera pero no ambas a la vez?<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p3" value="v"> Verdadero</p>
                     <p><input type="radio" name="p3" value="f"> Falso</p>
@@ -72,9 +103,9 @@
                 <div class="error" id="p3Err"></div>
             </div>
             <br>
-            <div class="card">
-                <p><strong>Cuarta pregunta</strong>, segun la propoción q: Dolly fue la primera oveja clonada, es una
-                    proposición falsa, verdadero(v) o falso(f)</p>
+            <div class="card card-padding">
+                <p>Según la propoción q: Dolly fue la primera oveja clonada, es una
+                    proposición falsa<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p4" value="v"> Verdadero</p>
                     <p><input type="radio" name="p4" value="f"> Falso</p>
@@ -83,10 +114,10 @@
             </div>
             <br>
 
-            <div class="card">
-                <p><strong>Quinta pregunta</strong>, Es la parte de la lógica que estudia las proposiciones y símbolos
+            <div class="card card-padding">
+                <p> Es la parte de la lógica que estudia las proposiciones y símbolos
                     utilizados en nuevas formaciones de las mismas que podrán ser verdaderas o falsas, señaladas por
-                    reglas formales, llamados conectores lógicos verdadero(v) o falso(f)</p>
+                    reglas formales, llamados conectores lógicos<i class="red">*</i></p>
                 <div class="form-inline">
                     <p><input type="radio" name="p5" value="v"> Verdadero</p>
                     <p><input type="radio" name="p5" value="f"> Falso</p>
@@ -97,7 +128,7 @@
             <br>
 
 
-            <input class="btn btn-dark" type="submit" id="submit" style="width: 100%;" value="ENVIAR">
+            <input class="btn btn-info" type="submit" id="submit" style="width: 24%;" value="ENVIAR">
             <br>
             <br>
         </form>
