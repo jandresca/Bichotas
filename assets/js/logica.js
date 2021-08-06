@@ -119,6 +119,17 @@ const help3 = () => {
 
   if(pregunta6.style.display==="block") b6.style.display = "none",d6.style.display = "none",document.getElementById("ayuda3").disabled=true;
 
+  if(pregunta7.style.display==="block") a7.style.display = "none",d7.style.display = "none", document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta8.style.display==="block") c8.style.display = "none",a8.style.display = "none", document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta9.style.display==="block") c9.style.display = "none",d9.style.display = "none", document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta10.style.display==="block") b10.style.display = "none",a10.style.display = "none", document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta11.style.display==="block") a11.style.display = "none",d11.style.display = "none", document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta12.style.display==="block") c12.style.display = "none",b12.style.display = "none", document.getElementById("ayuda3").disabled=true;
 };
 
 ayuda3.onclick = function () {
