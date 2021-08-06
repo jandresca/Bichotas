@@ -104,9 +104,29 @@ ayuda.style.display = "none";
 
 
 const help1 = () => {
-  if(pregunta1.style.display==="block") alert("El publico voto de la siguiente manera: \n -50 personas votaron por la A \n -20 personas votaron por la B \n -10 personas votaron por la C \n -5 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+  if(pregunta1.style.display==="block") alert("El publico voto de la siguiente manera: \n -30 personas votaron por la A \n -50 personas votaron por la B \n -15 personas votaron por la C \n -5 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
 
-  if(pregunta2.style.display==="block") alert("El publico voto de la siguiente manera: \n 40 personas votaron por la A \n 30 personas votaron por la B \n  10 personas votaron por la C \n 10 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+  if(pregunta2.style.display==="block") alert("El publico voto de la siguiente manera: \n 10 personas votaron por la A \n 10 personas votaron por la B \n 10 personas votaron por la C \n 70 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta3.style.display==="block") alert("El publico voto de la siguiente manera: \n 20 personas votaron por la A \n 20 personas votaron por la B \n 40 personas votaron por la C \n 20 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta4.style.display==="block") alert("El publico voto de la siguiente manera: \n 30 personas votaron por la A \n 10 personas votaron por la B \n 45 personas votaron por la C \n 15 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta5.style.display==="block") alert("El publico voto de la siguiente manera: \n 0 personas votaron por la A \n 90 personas votaron por la B \n 10 personas votaron por la C \n 0 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta6.style.display==="block") alert("El publico voto de la siguiente manera: \n 65 personas votaron por la A \n 15 personas votaron por la B \n 15 personas votaron por la C \n 5 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta7.style.display==="block") alert("El publico voto de la siguiente manera: \n 5 personas votaron por la A \n 10 personas votaron por la B \n 75 personas votaron por la C \n 10 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta8.style.display==="block") alert("El publico voto de la siguiente manera: \n 25 personas votaron por la A \n 35 personas votaron por la B \n 25 personas votaron por la C \n 15 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta9.style.display==="block") alert("El publico voto de la siguiente manera: \n 15 personas votaron por la A \n 55 personas votaron por la B \n 15 personas votaron por la C \n 15 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta10.style.display==="block") alert("El publico voto de la siguiente manera: \n 0 personas votaron por la A \n 0 personas votaron por la B \n 100 personas votaron por la C \n 0 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta11.style.display==="block") alert("El publico voto de la siguiente manera: \n 25 personas votaron por la A \n 45 personas votaron por la B \n 15 personas votaron por la C \n 15 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta12.style.display==="block") alert("El publico voto de la siguiente manera: \n 10 personas votaron por la A \n 10 personas votaron por la B \n 5 personas votaron por la C \n 75 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
 };
 
 ayuda.onclick = function () {
@@ -235,7 +255,7 @@ let fnStart = () => {
    }
   
   //pregunta 1
-  a.onclick = function () {
+  b.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -245,7 +265,7 @@ let fnStart = () => {
         (pregunta1.style.display = "none");
   };
   
-  b.onclick = function () {
+  a.onclick = function () {
    preguntaas(18);
   };
 
@@ -260,7 +280,7 @@ let fnStart = () => {
   
   
   //pregunta 2
-  a2.onclick = function () {
+  d2.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -279,7 +299,7 @@ let fnStart = () => {
     preguntaas(0);
   };
 
-  d2.onclick = function () {
+  a2.onclick = function () {
     preguntaas(0);
   };
 
@@ -292,11 +312,11 @@ let fnStart = () => {
     preguntaas(2);
   };
 
-  c3.onclick = function () {
+  d3.onclick = function () {
     preguntaas(2);
   };
 
-  d3.onclick = function () {
+  c3.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -362,7 +382,7 @@ let fnStart = () => {
   };
 
   //pregunta 6
-  a6.onclick = function () {
+  c6.onclick = function () {
     preguntaas(10);
   };
 
@@ -370,7 +390,7 @@ let fnStart = () => {
     preguntaas(10);
   };
 
-  c6.onclick = function () {
+  a6.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -423,7 +443,7 @@ let fnStart = () => {
     preguntaas(12);
   };
 
-  b8.onclick = function () {
+  d8.onclick = function () {
     preguntaas(12);
   };
 
@@ -431,7 +451,7 @@ let fnStart = () => {
     preguntaas(12);
   };
 
-  d8.onclick = function () {
+  b8.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -484,7 +504,7 @@ let fnStart = () => {
     preguntaas(14);
   };
 
-  b10.onclick = function () {
+  c10.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -503,7 +523,7 @@ let fnStart = () => {
         (pregunta11.style.display = "block"));
   };
 
-  c10.onclick = function () {
+  b10.onclick = function () {
     preguntaas(14);
   };
 
@@ -516,7 +536,7 @@ let fnStart = () => {
     preguntaas(15);
   };
 
-  b11.onclick = function () {
+  d11.onclick = function () {
     preguntaas(15);
   };
 
@@ -524,7 +544,7 @@ let fnStart = () => {
     preguntaas(15);
   };
 
-  d11.onclick = function () {
+  b11.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -553,7 +573,7 @@ let fnStart = () => {
     preguntaas(16);
   };
 
-  c12.onclick = function () {
+  d12.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -575,7 +595,7 @@ let fnStart = () => {
         (pregunta12.style.display = "none"));
   };
 
-  d12.onclick = function () {
+  c12.onclick = function () {
     
     preguntaas(16);
   };
