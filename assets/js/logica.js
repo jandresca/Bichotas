@@ -253,7 +253,8 @@ let fnStart = () => {
          ) + location.reload())
      : "";
    }
-  
+   function actualizar(){location.reload(true);}
+   
   //pregunta 1
   b.onclick = function () {
     correcta = emergente();
