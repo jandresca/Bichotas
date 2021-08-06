@@ -109,17 +109,17 @@ ayuda3.style.display = "none";
 const help3 = () => {
   if(pregunta1.style.display==="block") c.style.display = "none",d.style.display = "none",document.getElementById("ayuda3").disabled=true;
 
-  if(pregunta7.style.display==="block") a.style.display = "none",d.style.display = "none",, document.getElementById("ayuda3").disabled=true;
+  if(pregunta7.style.display==="block") a7.style.display = "none",d7.style.display = "none",document.getElementById("ayuda3").disabled=true;
 
-  if(pregunta8.style.display==="block") c.style.display = "none",a.style.display = "none",, document.getElementById("ayuda3").disabled=true;
+  if(pregunta8.style.display==="block") c8.style.display = "none",a8.style.display = "none", document.getElementById("ayuda3").disabled=true;
 
-  if(pregunta9.style.display==="block") c.style.display = "none",d.style.display = "none",, document.getElementById("ayuda3").disabled=true;
+  if(pregunta9.style.display==="block") c.style.display = "none",d.style.display = "none", document.getElementById("ayuda3").disabled=true;
 
-  if(pregunta10.style.display==="block") b.style.display = "none",a.style.display = "none",, document.getElementById("ayuda3").disabled=true;
+  if(pregunta10.style.display==="block") b.style.display = "none",a.style.display = "none", document.getElementById("ayuda3").disabled=true;
 
-  if(pregunta11.style.display==="block") a.style.display = "none",d.style.display = "none",, document.getElementById("ayuda3").disabled=true;
+  if(pregunta11.style.display==="block") a.style.display = "none",d.style.display = "none", document.getElementById("ayuda3").disabled=true;
 
-  if(pregunta12.style.display==="block") c.style.display = "none",b.style.display = "none",, document.getElementById("ayuda3").disabled=true;
+  if(pregunta12.style.display==="block") c.style.display = "none",b.style.display = "none", document.getElementById("ayuda3").disabled=true;
 };
 
 ayuda3.onclick = function () {
