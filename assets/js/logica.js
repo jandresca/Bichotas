@@ -80,6 +80,7 @@ let nombre1 = document.getElementById("nombre1");
 let start = document.getElementById("start");
 let timer = document.getElementById("timer");
 let ayuda = document.getElementById("ayuda");
+let ayuda2 = document.getElementById("ayuda2");
 let nombre = "";
 
 //inicializo las preguntas en estado none para que no se vean
@@ -101,6 +102,7 @@ punt.style.display = "none";
 punt_A.style.display = "none";
 timer.style.display = "none";
 ayuda.style.display = "none";
+ayuda2.style.display = "none";
 
 
 const help1 = () => {
@@ -133,6 +135,40 @@ ayuda.onclick = function () {
   help1();
 };
 
+const help2 = () => {
+  let usuario = prompt("Ingresa el nombre de la persona a la que quieres llamar")
+
+
+  if(pregunta1.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la B"), document.getElementById("ayuda2").disabled=true;
+
+  if(pregunta2.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la D"), document.getElementById("ayuda2").disabled=true;
+
+  if(pregunta3.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la C"), document.getElementById("ayuda2").disabled=true;
+
+  if(pregunta4.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la C"), document.getElementById("ayuda2").disabled=true;
+
+  if(pregunta5.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la B"), document.getElementById("ayuda2").disabled=true;
+
+  if(pregunta6.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la A"), document.getElementById("ayuda2").disabled=true;
+
+  if(pregunta7.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la C"), document.getElementById("ayuda2").disabled=true;
+
+  if(pregunta8.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la B"), document.getElementById("ayuda2").disabled=true;
+
+  if(pregunta9.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la B"), document.getElementById("ayuda2").disabled=true; 
+
+  if(pregunta10.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la C"), document.getElementById("ayuda2").disabled=true; 
+
+  if(pregunta11.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la B"), document.getElementById("ayuda2").disabled=true; 
+
+  if(pregunta12.style.display==="block") alert("Tu amigo/a " + usuario +" indica que la respuesta corresta es la A"), document.getElementById("ayuda2").disabled=true; 
+
+}
+
+ayuda2.onclick = function () {
+  help2();
+};
+
 window.onload = updateClock;
 totalTime = 200;
 function updateClock () { 
@@ -148,7 +184,6 @@ function updateClock () {
 }
 
 let fnStart = () => {
-  ayuda.style.display = "block";
   start.style.display = "none";
   punt.style.display = "block";
   punt_A.style.display = "block";
@@ -163,6 +198,8 @@ let fnStart = () => {
     window.onload = updateClock;
     totalTime = 30;
     timer.style.display = "block";
+    ayuda2.style.display = "block";
+    ayuda.style.display = "block";
   }
   while (nombre == null || nombre === "") {
     alert(
@@ -250,7 +287,8 @@ let fnStart = () => {
              " perdiste y quedaste con " +
              puntuacion[posicion] +
              " puntos"
-         ) + location.reload())
+         ) + 
+         setTimeout("location.reload()",2000))
      : "";
    }
    function actualizar(){location.reload(true);}
