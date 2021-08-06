@@ -107,3 +107,19 @@ p{
     top: 2%;
 
 }
+.fondo{
+    background-color: transparent;
+}
+.borde-img{
+    border-radius: 10%;
+}
+.nombres{
+    font-size: 18px;
+    text-transform: none;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.items{
+    align-items: center;
+}
