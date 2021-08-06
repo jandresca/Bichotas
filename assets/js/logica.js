@@ -79,6 +79,7 @@ let final = document.getElementById("final");
 let nombre1 = document.getElementById("nombre1");
 let start = document.getElementById("start");
 let timer = document.getElementById("timer");
+let ayuda = document.getElementById("ayuda");
 let nombre = "";
 
 //inicializo las preguntas en estado none para que no se vean
@@ -99,6 +100,18 @@ nombre1.style.display = "none";
 punt.style.display = "none";
 punt_A.style.display = "none";
 timer.style.display = "none";
+ayuda.style.display = "none";
+
+
+const help1 = () => {
+  if(pregunta1.style.display==="block") alert("El publico voto de la siguiente manera: \n -50 personas votaron por la A \n -20 personas votaron por la B \n -10 personas votaron por la C \n -5 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+
+  if(pregunta2.style.display==="block") alert("El publico voto de la siguiente manera: \n 40 personas votaron por la A \n 30 personas votaron por la B \n  10 personas votaron por la C \n 10 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
+};
+
+ayuda.onclick = function () {
+  help1();
+};
 
 window.onload = updateClock;
 totalTime = 200;
@@ -115,12 +128,13 @@ function updateClock () {
 }
 
 let fnStart = () => {
+  ayuda.style.display = "block";
   start.style.display = "none";
   punt.style.display = "block";
   punt_A.style.display = "block";
   easyAudio.play();
   easyAudio.volume = 0.3;
-  
+
   let nombre = prompt(
     "Bienvenido al juego quien quiere ser millonario por favor ingrese su nombre: "
   );
