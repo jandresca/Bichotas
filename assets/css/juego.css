@@ -1,6 +1,4 @@
-.btn {
-  width: 100%;
-}
+
 
 body{
   background-color: #071f5f;
@@ -8,6 +6,16 @@ body{
 .h3{
   color: azure;
   font-weight: 100;
+}
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
 }
 
 

@@ -81,6 +81,7 @@ let start = document.getElementById("start");
 let timer = document.getElementById("timer");
 let ayuda = document.getElementById("ayuda");
 let ayuda2 = document.getElementById("ayuda2");
+let ayuda3 = document.getElementById("ayuda3");
 let nombre = "";
 
 //inicializo las preguntas en estado none para que no se vean
@@ -103,7 +104,37 @@ punt_A.style.display = "none";
 timer.style.display = "none";
 ayuda.style.display = "none";
 ayuda2.style.display = "none";
+ayuda3.style.display = "none";
 
+const help3 = () => {
+  if(pregunta1.style.display==="block") c.style.display = "none",d.style.display = "none",document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta2.style.display==="block") alert("El publico voto de la siguiente manera: \n 10 personas votaron por la A \n 10 personas votaron por la B \n 10 personas votaron por la C \n 70 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta3.style.display==="block") alert("El publico voto de la siguiente manera: \n 20 personas votaron por la A \n 20 personas votaron por la B \n 40 personas votaron por la C \n 20 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta4.style.display==="block") alert("El publico voto de la siguiente manera: \n 30 personas votaron por la A \n 10 personas votaron por la B \n 45 personas votaron por la C \n 15 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta5.style.display==="block") alert("El publico voto de la siguiente manera: \n 0 personas votaron por la A \n 90 personas votaron por la B \n 10 personas votaron por la C \n 0 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta6.style.display==="block") alert("El publico voto de la siguiente manera: \n 65 personas votaron por la A \n 15 personas votaron por la B \n 15 personas votaron por la C \n 5 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta7.style.display==="block") alert("El publico voto de la siguiente manera: \n 5 personas votaron por la A \n 10 personas votaron por la B \n 75 personas votaron por la C \n 10 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta8.style.display==="block") alert("El publico voto de la siguiente manera: \n 25 personas votaron por la A \n 35 personas votaron por la B \n 25 personas votaron por la C \n 15 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta9.style.display==="block") alert("El publico voto de la siguiente manera: \n 15 personas votaron por la A \n 55 personas votaron por la B \n 15 personas votaron por la C \n 15 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta10.style.display==="block") alert("El publico voto de la siguiente manera: \n 0 personas votaron por la A \n 0 personas votaron por la B \n 100 personas votaron por la C \n 0 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta11.style.display==="block") alert("El publico voto de la siguiente manera: \n 25 personas votaron por la A \n 45 personas votaron por la B \n 15 personas votaron por la C \n 15 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+
+  if(pregunta12.style.display==="block") alert("El publico voto de la siguiente manera: \n 10 personas votaron por la A \n 10 personas votaron por la B \n 5 personas votaron por la C \n 75 personas votaron por la D"), document.getElementById("ayuda3").disabled=true;
+};
+
+ayuda3.onclick = function () {
+  help3();
+};
 
 const help1 = () => {
   if(pregunta1.style.display==="block") alert("El publico voto de la siguiente manera: \n -30 personas votaron por la A \n -50 personas votaron por la B \n -15 personas votaron por la C \n -5 personas votaron por la D"), document.getElementById("ayuda").disabled=true;
@@ -200,6 +231,7 @@ let fnStart = () => {
     timer.style.display = "block";
     ayuda2.style.display = "block";
     ayuda.style.display = "block";
+    ayuda3.style.display = "block";
   }
   while (nombre == null || nombre === "") {
     alert(
