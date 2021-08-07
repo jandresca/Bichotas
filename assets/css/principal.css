@@ -1,66 +1,88 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    /* por favor cambiar el color a su gusto */
-    background-color: white;
-    font-family: Helvetica,sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-.bannerinicio{
-    /* por favor cambiar la ruta de la imagen de la página */
-    background-image: url(../img/principal2.gif);
-    height: 792px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Color de la letra */
-    color: rgb(27, 19, 94);
-  }
-  .bannerinicio p {
-    text-align: right;
-    font-size: 53px;
-    padding: 12% 7%;
-  }
-  .center{
-    text-align: center;
-  }
-  
-  .imagen{
-    width: 37%;
-  }
+body {
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+}
+header {
+  background: url(../img/principal2.gif) no-repeat bottom center;
+  background-size: cover;
+  color: #cfcfcf;
+  position: relative;
+  height: 100%;
+}
+header p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 60px;
+  padding: 0 4px;
+}
+.intro-text {
+  position: relative;
+  padding-top: 300px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 200px;
+}
+.intro-text H1 {
+  font-size: 45px;
+  color: #2e2828;
+  font-weight: 600;
+}
+.color {
+  color: #02979d;
+  font-weight: 700;
+}
+.btn-default {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  border: 1px solid #02989da2;
+  border-radius: 4px;
+  margin: 0 8px;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active {
+  background-color: #02989da2;
+  border: 1px solid #02989da2;
+  color: #eeeeee;
+}
 
-  .btn-comenzar{
-    font-family: 'Roboto', sans-serif;
-     border: #03989e solid;
-     color: #03989e;
-     background: transparent;
-     text-align: center;
-     font-size: 19px;
-     padding-top: 5px;
-     padding-bottom: 5px;
-     padding-right: 70px;
-     padding-left: 70px;
-     position: absolute;
-     top: 54%;
-    left: 67%;
-     box-shadow: 2px 2px 5px #999;
- }
- .center{
-     text-align: center;
-     padding-bottom: 3%;
- }
- 
- .inline{
-     display:inline-flex;
-     align-items: center;
+p{
+  font-size: 19px;
+  text-align:justify;
+}
 
- }
- .footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
- 
+.center {
+  text-align: center;
+}
+
+.imagen {
+  width: 37%;
+}
+
+
+.center {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.inline {
+  display: inline-flex;
+  align-items: center;
+}
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
