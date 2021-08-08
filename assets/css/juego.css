@@ -1,7 +1,8 @@
 
 
 body{
-  background-color: #071f5f;
+ /* background-color: #071f5f;*/
+  background-color: #061c39;
 }
 .h3{
   color: azure;
@@ -28,6 +29,10 @@ ul{
 
 }
 
+
+.items-center{
+align-items: center;
+}
 
 /*Botones*/
 ::-moz-focus-inner {
@@ -288,4 +293,34 @@ ul{
 }
 .nav-link{
   color: aliceblue;
+}
+
+.card-dos{
+  background-color: transparent;
+  border: none;
+}
+.cincuenta{
+  font-size: 18px;
+    padding-bottom: 21%;
+    padding-top: 14%;
+}
+.position{
+  position: absolute;
+    left: 37%;
+    top: 10%;
+}
+.puntos1{
+  position: absolute;
+    left: 2%;
+    top: 13%;
+}
+.puntos2{
+  position: absolute;
+    left: 2%;
+    top: 43%;
+}
+.time{
+  position: absolute;
+    left: 46%;
+    top: 10%;
 }

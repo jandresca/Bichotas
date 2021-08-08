@@ -203,7 +203,7 @@ ayuda2.onclick = function () {
 window.onload = updateClock;
 totalTime = 200;
 function updateClock () { 
-  document.getElementById("timer").innerHTML = "Tiempo: " + totalTime + " segundos";
+  document.getElementById("timer").innerHTML = "" + totalTime + " segundos";
     totalTime === 0
   ? (ganados.innerHTML =
       alert(
