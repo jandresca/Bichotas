@@ -309,6 +309,10 @@ align-items: center;
     left: 37%;
     top: 10%;
 }
+.position button{
+  border: solid 2px cadetblue;
+    border-radius: 32px;
+}
 .puntos1{
   position: absolute;
     left: 2%;
@@ -323,4 +327,9 @@ align-items: center;
   position: absolute;
     left: 46%;
     top: 10%;
+}
+
+.fondo{
+  background-color: #061c39;
+    border: none;
 }
