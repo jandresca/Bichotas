@@ -210,7 +210,7 @@ function updateClock () {
         "lo siento " +
           nombre +
           " perdiste por falta de tiempo, pero puedes jugar de nuevo cuando desees"
-      ) + location.reload())
+      )+location.reload())
   : totalTime -=1,setTimeout("updateClock()",1000);
 }
 
@@ -311,7 +311,7 @@ let fnStart = () => {
   function preguntaas(posicion) {
      pregunta = f();
      console.log(pregunta);
-     pregunta === "si"? (ganados.innerHTML = alert("lo siento " +nombre +" perdiste y quedaste con " +puntuacion[posicion] +" puntos") + setTimeout("location.reload()",2000)) + (ganados.innerHTML = puntuacion[183]) : "";
+     pregunta === "si"? (ganados.innerHTML = alert("lo siento " +nombre +" perdiste y quedaste con " +puntuacion[posicion] +" puntos") + setTimeout("location.reload()",2000)) + (ganados.innerHTML = puntuacion[18]) : "";
    }
    
   //pregunta 1
