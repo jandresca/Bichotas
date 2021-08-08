@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -47,40 +47,38 @@
         <li><a class="dropdown-item" href="juego.html">Quien Quiere ser Millonario</a></li>
       </ul>
     </li>
-
   </ul>
   <br>
-
+  
   <div class="container">
-    <div class="card text-center items-center card-dos">
-      <br>
-      <br>
-      <span id="timer" style="text-align: left; color: white;" class="time"><strong>30 segundos</strong></span>
-      <div id="outer" class="position">
-        <div class="inner"><button class="btn btn-dark" id="ayuda"><img src="./assets/img/public.png" alt=""></button></div>
-        <div class="inner"><button class="btn btn-dark" id="ayuda2"><img src="./assets/img/cell.png" alt=""></button></div>
-        <div class="inner"><button class="btn btn-dark cincuenta" id="ayuda3">50/50</button></div>
-        <br>
-        <br>
+    <div class="row text-center">
+      <div class="col-lg-4">
+        <h4 id="punt" style="color: white;">
+          Puntos por pregunta:
+          <div id="ganados"></div>
+        </h4>
+        <h4 id="punt_A" style="color: white;">
+          Puntos Acumulados:
+          <div id="puntos"></div>
       </div>
-
-      <img src="./assets/img/millonario.gif" style ="width: 17%;"alt="">
-      <!--<h1 class="display-5"><b>¿Quién quiere ser millonario?</b></h1>-->
-      <h4 class="puntos1" id="punt" style="color: white;">
-        Puntos por pregunta:
-        <div id="ganados"></div>
-      </h4>
-      <h4 class="puntos2" id="punt_A" style="color: white;"> 
-        Puntos Acumulados:
-        <div id="puntos"></div>
-      </h4>
-      <br>
-      <br>
-      <button class="btn btn-lg btn-dark" id="start">START</button>
-      
-
-      
+  
+      <div class="col-lg-4">
+        <span id="timer" style="color: white;" class="time"><strong>30 segundos</strong></span>
+        <img src="./assets/img/millonario.gif" style="width: 50%;" alt="logo">
+        <br>
+        <button class="btn btn-lg btn-dark" id="start">START</button>
+      </div>
+  
+      <div class="col-lg-4">
+        <div class="inner"><button class="btn btn-dark" id="ayuda"><img src="./assets/img/public.png" alt=""></button>
+        </div>
+        <div class="inner"><button class="btn btn-dark" id="ayuda2"><img src="./assets/img/cell.png" alt=""></button>
+        </div>
+        <div class="inner"><button class="btn btn-dark cincuenta" id="ayuda3">50/50</button></div>
+      </div>
+  
     </div>
+    <br><br>
     <div class="card text-center fondo" id="pregunta1">
 
       <h3 class="display-5 h3 fondo"> 1. ¿Cuál sería el resultado de 3+2+''7''? </h3>
