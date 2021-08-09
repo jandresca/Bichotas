@@ -106,7 +106,7 @@
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
                 <h2 class="accordion-header h2" id="panelsStayOpen-headingOne">
-                    <button style="background-color: rgb(245, 203, 14);" class="accordion-button" type="button"
+                    <button class="accordion-button" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne">
                         ¿Que es JS?
@@ -124,7 +124,7 @@
                                     estática para que la veas, muestra oportunas actualizaciones de contenido, mapas
                                     interactivos, animación de
                                     Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc.</p><br>
-                                <button style="background-color: rgb(245, 203, 14);"
+                                <button 
                                     onclick="location.href='https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript'"
                                     class="btn btn-info">Saber mas</button>
 
@@ -141,7 +141,7 @@
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button style="background-color: rgb(245, 203, 14);" class="accordion-button collapsed"
+                    <button class="accordion-button collapsed"
                         type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                         aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                         ¿Para qué sirve JS?
@@ -160,7 +160,7 @@
                                     tiene que ver con el
                                     lenguaje de programación Java, ya que su principal función es ayudar a crear páginas
                                     webs dinámicas.</p><br>
-                                <button style="background-color: rgb(245, 203, 14);"
+                                <button 
                                     onclick="location.href='https://soyrafaramos.com/que-es-javascript-para-que-sirve/'"
                                     class="btn btn-info">Saber mas</button>
                             </div>
@@ -175,7 +175,7 @@
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button style="background-color: rgb(245, 203, 14);" class="accordion-button collapsed"
+                    <button class="accordion-button collapsed"
                         type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
                         aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                         Herramientas para utilizar JS
@@ -193,7 +193,7 @@
                                     HTML, <br>TextMate, Vim, UltraEdit, Coda, BBEdit, Komodo Edit, Visual Studio Code,
                                     <br> Brackets, CodeShare
                                 </p><br>
-                                <button style="background-color: rgb(245, 203, 14);"
+                                <button
                                     onclick="location.href='https://kinsta.com/es/blog/mejores-editores-texto/'"
                                     class="btn btn-info">Saber mas</button>
                             </div>
@@ -209,7 +209,7 @@
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-heading6">
-                    <button style="background-color: rgb(245, 203, 14);" class="accordion-button collapsed"
+                    <button class="accordion-button collapsed"
                         type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6"
                         aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
                         Tips para usarlo de la manera adecuada
@@ -229,7 +229,7 @@
                                     todos a ellos que te ayudarán a mejorar tu experiencia como desarrollador
                                     Javascript.
                                 </p><br>
-                                <button style="background-color: rgb(245, 203, 14);"
+                                <button 
                                     onclick="location.href='https://latteandcode.medium.com/10-consejos-trucos-de-javascript-que-conviene-saber-109d8ef99a4c'"
                                     class="btn btn-info">Saber mas</button>
                             </div>
@@ -244,7 +244,7 @@
             </div>
             <div class="accordion-item">
                 <h2 class=" h2 accordion-header" id="panelsStayOpen-heading7">
-                    <button style="background-color: rgb(245, 203, 14);" class="accordion-button collapsed"
+                    <button class="accordion-button collapsed"
                         type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7"
                         aria-expanded="false" aria-controls="panelsStayOpen-collapse7">
                         Cursos gratis: JavaScript desde cero
@@ -264,13 +264,12 @@
                                 <li>Programación básica de Platzi</li>
 
                                 <br>
-                                <button style="background-color: rgb(245, 203, 14);"
-                                    onclick="location.href='https://ed.team/cursos/javascript'"
+                                <button  onclick="location.href='https://ed.team/cursos/javascript'"
                                     class="btn btn-info">Curso EDteam</button>
-                                <button style="background-color: rgb(245, 203, 14);"
+                                <button 
                                     onclick="location.href='https://codigofacilito.com/cursos/javascript?app=true'"
                                     class="btn btn-info ">Curso códigoF</button>
-                                <button style="background-color: rgb(245, 203, 14);"
+                                <button 
                                     onclick="location.href='https://platzi.com/clases/1050-programacion-basica/25972-recap-programacion-basica/'"
                                     class="btn btn-info ">Curso platzi</button>
                             </div>
@@ -291,14 +290,26 @@
 
     <div class="container bg-light text-center rounded-1" data-aos="fade-down">
         <br>
-        <h2 class="display-5"><strong>Cuestionario final</strong></h2>
-        <a href="./formJS.html" style="background-color: rgb(245, 203, 14);" class="btn btn-info">Clic aqui para iniciar
-            el cuestionario</a><br><br>
+        <br>
+        <div class="row">
+            <div class="col-lg-4" style="padding-left: 5%;">
+                <img src="./assets/img/preguntass.svg" class="img-fluid rounded " style="width: 90%;">
+            </div>
+            <div class="col-lg-8">
+                <h2 class=""><strong>Mide tu progreso</strong></h2>
+                <br>
+                <p style="text-align: center;">Realiza un corto cuestionario para medir lo que has aprendido !!
+                </p>
+                <br>
+                <a href="./formJS.html" class="btn btn-info">Iniciar</a>
+                <br><br>
+            </div>
+        </div>
     </div>
 
-
+<br>
     <footer class="footer1 footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">Copyright &copy; Página web desarrollada por el equipo Bichotas <br>2021
+        <div class="container px-4 px-lg-5">Copyright &copy; Página web desarrollada por el equipo Helprogram<br>2021
         </div>
     </footer>
 
