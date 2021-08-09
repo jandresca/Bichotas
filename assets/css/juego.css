@@ -1,33 +1,33 @@
-
-
-body{
-  background-color: #071f5f;
+body {
+  /* background-color: #071f5f;*/
+  background-color: #061c39;
 }
-.h3{
+.h3 {
   color: azure;
   font-weight: 100;
 }
 
-#outer
-{
-    width:100%;
-    text-align: center;
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.inner
-{
-    display: inline-block;
+.inner {
+  display: inline-block;
 }
 
-
-nav-link{
+nav-link {
   color: aliceblue;
 }
 
-ul{
+ul {
   background-color: black;
-
 }
 
+.items-center {
+  align-items: center;
+}
 
 /*Botones*/
 ::-moz-focus-inner {
@@ -77,8 +77,16 @@ ul{
   );
 
   /* Imágenes de fondo de los botones */
-  --fondoA: linear-gradient(90deg, rgba(14, 62, 190, 0.6) 20%, rgba(7, 31, 95, 0.9) 80%);
-  --fondoB: linear-gradient(90deg, rgba(7, 31, 95, 0.9) 20%, rgba(14, 62, 190, 0.6) 80%);
+  --fondoA: linear-gradient(
+    90deg,
+    rgba(14, 62, 190, 0.6) 20%,
+    rgba(7, 31, 95, 0.9) 80%
+  );
+  --fondoB: linear-gradient(
+    90deg,
+    rgba(7, 31, 95, 0.9) 20%,
+    rgba(14, 62, 190, 0.6) 80%
+  );
 }
 
 /* Contenedor principal */
@@ -115,7 +123,12 @@ ul{
   /* Fondo de las líneas que van entre los botones. Es la
      que le da la apariencia 3D */
   background-color: var(--color-base);
-  background-image: linear-gradient(0deg, var(--color-base), white, var(--color-secundario));
+  background-image: linear-gradient(
+    0deg,
+    var(--color-base),
+    white,
+    var(--color-secundario)
+  );
 
   /* Altura de las líneas que están entre los botones*/
   height: var(--grosor);
@@ -193,23 +206,23 @@ ul{
 .button {
   display: block;
   position: relative;
-  
+
   /* Relleno horizontal + 4px adicionales en función
      de la posición de los nodos principales */
   padding-left: calc(var(--relleno) + 4px);
   padding-right: calc(var(--relleno) + 4px);
-  
+
   /* Relleno vertical en función del borde que emulamos
      que queremos que se visualice, que es la que rodea
      el botón*/
   padding-top: calc(var(--separacion));
   padding-bottom: calc(var(--separacion));
-  
+
   /* Se visualizarán los puntos suspensivos en el texto que
      no quepan en el botón */
   overflow: hidden;
   text-overflow: ellipsis;
-  
+
   min-height: var(--height);
   width: 100%;
   transition: 300ms ease;
@@ -224,8 +237,13 @@ ul{
 
   /* Imagen de fondo que utilizaremos para emular el borde 
      degradado que rodea el botón */
-  background-image: radial-gradient(white, var(--color-secundario) 30%, white 50%, var(--color-secundario));
-  
+  background-image: radial-gradient(
+    white,
+    var(--color-secundario) 30%,
+    white 50%,
+    var(--color-secundario)
+  );
+
   background-size: 120% 100%;
   background-position: center center;
 }
@@ -279,13 +297,40 @@ ul{
   color: var(--color-terciario);
 }
 
-.logo{
+.logo {
   position: absolute;
   left: 4%;
   height: 60px;
   top: 2%;
-
 }
-.nav-link{
+.nav-link {
   color: aliceblue;
+}
+
+.card-dos {
+  background-color: transparent;
+  border: none;
+}
+.cincuenta {
+  font-size: 18px;
+  padding-bottom: 21%;
+  padding-top: 14%;
+}
+.position {
+  position: absolute;
+  left: 37%;
+  top: 10%;
+}
+.position button {
+  border: solid 2px cadetblue;
+  border-radius: 32px;
+}
+
+.time {
+  font-size: 19px;
+}
+
+.fondo {
+  background-color: #061c39;
+  border: none;
 }

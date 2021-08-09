@@ -148,4 +148,9 @@ p{
   border: none;
     border-bottom: gray 1px dashed;
 }
-
+.footer1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

@@ -12,7 +12,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .bodyjs{
-  background-color: rgb(245, 203, 14);
+  background-color: #aee2ec;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 /*Footer de las páginas*/
@@ -170,3 +170,5 @@ p{
     padding: 150px 50px;
   }
 }
+
+
