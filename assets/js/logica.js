@@ -530,6 +530,10 @@ let fnStart = () => {
 
   //pregunta 9
   a9.onclick = function () {
+    preguntaas(13);
+  };
+
+  b9.onclick = function () {
     correcta = emergente();
     if (correcta === "si")
       alert("perfecto " + nombre + " esta es la adecuada"),
@@ -545,10 +549,6 @@ let fnStart = () => {
         (pregunta8.style.display = "none"),
         (pregunta9.style.display = "none"),
         (pregunta10.style.display = "block"));
-  };
-
-  b9.onclick = function () {
-    preguntaas(13);
   };
 
   c9.onclick = function () {
