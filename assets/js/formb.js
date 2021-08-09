@@ -19,44 +19,71 @@ const validateForm = () => {
   c = p3.charAt(0);
   d = p4.charAt(0);
   e = p5.charAt(0);
-  
+
   //validar campo nombre
   if (nombre == "") {
     printError("nombreErr", "Por favor ingrese su Nombre ");
   } else {
-    var regex =/^[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ1234567890ñÑ.,-]{3,100}$/;
+    var regex =
+      /^[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ1234567890ñÑ.,-]{3,100}$/;
+    //var regex = /^[a-zA-áéíóúñüàè]{5,50}$/;
     if (regex.test(nombre) === false) {
-      printError("nombreErr","Por favor ingrese un Nombre valido y con Max 100 letras");
+      printError(
+        "nombreErr",
+        "Por favor ingrese un Nombre valido y con Max 100 letras"
+      );
     } else {
       printError("nombreErr", "");
       nombreErr = false;
     }
   }
-  //primera pregunta
-  if (a === "v" || a === "f") p1Err = false;
-  p1===""?printError("p1Err", "Por favor selecciona una opción (Verdadero o Falso)"):printError("p1Err", ""),p1Err = false;
-
-  //segunda pregunta
-  if (b === "v" || b === "f") p2Err = false;
-  p2===""?printError("p2Err", "Por favor selecciona una opción (Verdadero o Falso)"):printError("p2Err", ""),p2Err = false;
-
-  //tercera pregunta
-  if (c === "v" || c === "f") p3Err = false;
-  p3===""?printError("p3Err", "Por favor selecciona una opción (Verdadero o Falso)"):printError("p3Err", ""),p3Err = false;
-
-  //Cuarta pregunta
-  if (d === "v" || d === "f") p4Err = false;
-  p4===""?printError("p4Err", "Por favor selecciona una opción (Verdadero o Falso)"):printError("p4Err", ""),p4Err = false;
-
-  //Quinta pregunta
-  if (e === "v" || e === "f") p5Err = false;
-  p5===""?printError("p5Err", "Por favor selecciona una opción (Verdadero o Falso)"):printError("p5Err", ""),p5Err = false;
-
+    //primera pregunta
+    if (a === "v" || a === "f") p1Err = false;
+    if (p1 == "") {
+      printError("p1Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p1Err", "");
+      p1Err = false;
+    }  
+    //segunda pregunta
+    if (b === "v" || b === "f")  p2Err = false;
+    if (p2 == "") {
+      printError("p2Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p2Err", "");
+      p2Err = false;
+    }
+    //tercera pregunta
+    if (c === "v" || c === "f") p3Err = false;
+    if (p3 == "") {
+      printError("p3Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p3Err", "");
+      p3Err = false;
+    } 
+    //Cuarta pregunta
+    if (d === "v" || d === "f") p4Err = false;
+    if (p4 == "") {
+      printError("p4Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p4Err", "");
+      p4Err = false;
+    }
+    //quinta pregunta
+    if (e === "v" || e === "f") p5Err = false;
+    if (p5 == "") {
+      printError("p5Err", "Por favor selecciona una opción (Verdadero o Falso)");
+    } else {
+      printError("p5Err", "");
+      p5Err = false;
+    }
   // validación de respuestas
   let preg = (res1, res2, res3, res4, res5) => {
     let buenas = 0;
     if (a === res1 && b === res2 && c === res3 && d === res4 && e === res5) {
-      return alert(`Felicidades Aprobaste el Examen ${nombre}, preguntas correctas 5/5`);
+      return alert(
+        `Felicidades Aprobaste el Examen ${nombre}, preguntas correctas 5/5`
+      );
     } else {
       a === res1 ? buenas++ : "";
       b === res2 ? buenas++ : "";
